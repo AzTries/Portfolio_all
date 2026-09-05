@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sneha Guchait — Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E0D0C;
+    --bone:#EDE7D8;
+    --bone-dim:#c9c2ae;
+    --brass:#8B7355;
+    --brass-bright:#B8996B;
+    --muted:#524B3F;
+    --line: rgba(237,231,216,0.16);
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--ink);
+    color:var(--bone);
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+  }
+  ::selection{ background:var(--brass); color:var(--ink); }
+
+  a{ color:inherit; text-decoration:none; }
+
+  .view{ display:none; min-height:100vh; }
+  .view.active{ display:block; }
+
+  /* ---------- Shared chrome ---------- */
+  .frame{
+    max-width:720px;
+    margin:0 auto;
+    padding:9vh 28px 10vh;
+  }
+  .mark{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:15px;
+    color:var(--brass-bright);
+    letter-spacing:0.02em;
+  }
+  .back{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    color:var(--bone-dim);
+    cursor:pointer;
+    margin-bottom:56px;
+    border:none;
+    background:none;
+    font-family:'Inter',sans-serif;
+    padding:0;
+  }
+  .back:hover{ color:var(--bone); }
+  .back svg{ width:12px; height:12px; }
+
+  /* ---------- Index page ---------- */
+  #view-index .frame{ padding-top:11vh; }
+
+  .titling{ margin-bottom:14vh; }
+  .titling .mark{ display:block; margin-bottom:22px; }
+  h1{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:clamp(38px, 6vw, 56px);
+    line-height:1.05;
+    margin:0 0 18px;
+    color:var(--bone);
+  }
+  .alias-line{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--brass-bright);
+    margin:-8px 0 22px;
+  }
+  .titling p{
+    font-size:15px;
+    line-height:1.6;
+    color:var(--bone-dim);
+    max-width:46ch;
+    margin:0;
+  }
+
+  .index-list{ border-top:1px solid var(--line); }
+  .entry{
+    display:flex;
+    align-items:baseline;
+    gap:28px;
+    padding:34px 0;
+    border-bottom:1px solid var(--line);
+    cursor:pointer;
+    transition:padding-left 0.35s cubic-bezier(.2,.7,.3,1);
+  }
+  .entry:hover{ padding-left:12px; }
+  .entry:hover .entry-title{ color:var(--brass-bright); }
+  .entry:hover .entry-arrow{ opacity:1; transform:translateX(0); }
+
+  .entry-num{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--muted);
+    padding-top:6px;
+    flex-shrink:0;
+    width:28px;
+  }
+  .entry-body{ flex:1; min-width:0; }
+  .entry-title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:clamp(24px, 4vw, 32px);
+    font-weight:500;
+    margin:0 0 6px;
+    transition:color 0.3s ease;
+  }
+  .entry-sub{
+    font-size:13px;
+    color:var(--muted);
+    line-height:1.5;
+  }
+  .entry-arrow{
+    font-size:20px;
+    color:var(--brass);
+    opacity:0;
+    transform:translateX(-6px);
+    transition:all 0.35s ease;
+    padding-top:4px;
+    flex-shrink:0;
+  }
+
+  .foot-note{
+    margin-top:9vh;
+    font-size:12px;
+    color:var(--muted);
+    line-height:1.6;
+  }
+
+  /* ---------- Coming soon page ---------- */
+  .soon-wrap{
+    min-height:70vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-top:6vh;
+  }
+  .soon-wrap h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:clamp(32px, 5vw, 44px);
+    margin:0 0 20px;
+  }
+  .soon-tag{
+    display:inline-block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.04em;
+    color:var(--brass-bright);
+    border:1px solid var(--brass);
+    padding:5px 12px;
+    border-radius:2px;
+    margin-bottom:28px;
+  }
+  .soon-wrap p{
+    font-size:15px;
+    line-height:1.7;
+    color:var(--bone-dim);
+    max-width:48ch;
+    margin:0 0 8px;
+  }
+  .soon-list{
+    margin-top:22px;
+    padding-left:0;
+    list-style:none;
+    font-size:14px;
+    color:var(--muted);
+  }
+  .soon-list li{
+    padding:9px 0;
+    border-top:1px solid var(--line);
+  }
+  .soon-list li:before{
+    content:"—";
+    color:var(--brass);
+    margin-right:10px;
+  }
+
+  /* ---------- AI Engineering page ---------- */
+  .ai-head{ margin-bottom:8vh; }
+  .ai-head .mark{ display:block; margin-bottom:16px; }
+  .ai-head h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:clamp(32px, 5vw, 44px);
+    margin:0 0 16px;
+  }
+  .ai-head p{
+    font-size:14px;
+    color:var(--bone-dim);
+    line-height:1.6;
+    max-width:50ch;
+  }
+  .gh-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:22px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--brass-bright);
+    border-bottom:1px solid var(--brass);
+    padding-bottom:2px;
+  }
+  .gh-link:hover{ color:var(--bone); border-color:var(--bone); }
+  .ai-links-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:24px;
+  }
+
+  .section-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--muted);
+    letter-spacing:0.04em;
+    margin-bottom:20px;
+  }
+
+  .proj{
+    padding:28px 0;
+    border-top:1px solid var(--line);
+  }
+  .proj:last-of-type{ border-bottom:1px solid var(--line); }
+  .proj-title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:22px;
+    font-weight:500;
+    margin:0 0 8px;
+  }
+  .proj-desc{
+    font-size:13.5px;
+    color:var(--bone-dim);
+    line-height:1.6;
+    margin:0 0 16px;
+    max-width:52ch;
+  }
+  .proj-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .proj-links a, .proj-links span{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    padding:7px 13px;
+    border:1px solid var(--line);
+    border-radius:2px;
+    color:var(--bone-dim);
+  }
+  .proj-links a{ cursor:pointer; }
+  .proj-links a:hover{
+    border-color:var(--brass);
+    color:var(--brass-bright);
+  }
+  .proj-links .disabled{
+    color:var(--muted);
+    opacity:0.6;
+  }
+  .proj-links .live{
+    color:var(--brass-bright);
+    border-color:var(--brass);
+  }
+
+  @media (max-width:560px){
+    .frame{ padding:8vh 20px 8vh; }
+    .entry{ gap:16px; }
+    .entry-num{ width:20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ INDEX ============ -->
+<div id="view-index" class="view active">
+  <div class="frame">
+    <div class="titling">
+      <span class="mark">Portfolio</span>
+      <h1>Sneha Guchait</h1>
+      <p class="alias-line">creative alias: Azz</p>
+      <p>Illustration, story, and systems — a working index of things made.</p>
+    </div>
+
+    <div class="index-list">
+      <div class="entry" onclick="window.open('https://aztries-art.my.canva.site/', '_blank')">
+        <span class="entry-num">I</span>
+        <div class="entry-body">
+          <p class="entry-title">Illustrations</p>
+          <p class="entry-sub">Concept art, character studies &amp; sketchwork — opens in a new tab</p>
+        </div>
+        <span class="entry-arrow">↗</span>
+      </div>
+
+      <div class="entry" onclick="showView('view-storyboard')">
+        <span class="entry-num">II</span>
+        <div class="entry-body">
+          <p class="entry-title">Storyboarding</p>
+          <p class="entry-sub">Sequential art for 2D animation</p>
+        </div>
+        <span class="entry-arrow">→</span>
+      </div>
+
+      <div class="entry" onclick="showView('view-narrative')">
+        <span class="entry-num">III</span>
+        <div class="entry-body">
+          <p class="entry-title">Narrative Design</p>
+          <p class="entry-sub">Character dynamics, world systems &amp; story one-pagers</p>
+        </div>
+        <span class="entry-arrow">→</span>
+      </div>
+
+      <div class="entry" onclick="showView('view-ai')">
+        <span class="entry-num">IV</span>
+        <div class="entry-body">
+          <p class="entry-title">AI Engineering</p>
+          <p class="entry-sub">Agents, RAG pipelines &amp; deployed tools</p>
+        </div>
+        <span class="entry-arrow">→</span>
+      </div>
+    </div>
+
+    <p class="foot-note">Delhi — built and maintained by hand.</p>
+  </div>
+</div>
+
+<!-- ============ STORYBOARDING (coming soon) ============ -->
+<div id="view-storyboard" class="view">
+  <div class="frame">
+    <button class="back" onclick="showView('view-index')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      Index
+    </button>
+    <div class="soon-wrap">
+      <span class="soon-tag">In progress</span>
+      <h2>Storyboarding for 2D&nbsp;Animation</h2>
+      <p>This section is being put together. Sequential panels and shot-planning work will live here soon.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NARRATIVE DESIGN (coming soon) ============ -->
+<div id="view-narrative" class="view">
+  <div class="frame">
+    <button class="back" onclick="showView('view-index')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      Index
+    </button>
+    <div class="soon-wrap">
+      <span class="soon-tag">In progress</span>
+      <h2>Narrative Design</h2>
+      <p>Fiction, character dynamics, and world systems &amp; logic — including story one-pagers. This section is being put together.</p>
+      <ul class="soon-list">
+        <li>One-pagers</li>
+        <li>Character profiles</li>
+        <li>World systems &amp; logic</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ============ AI ENGINEERING ============ -->
+<div id="view-ai" class="view">
+  <div class="frame">
+    <button class="back" onclick="showView('view-index')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      Index
+    </button>
+
+    <div class="ai-head">
+      <span class="mark">Sneha Guchait</span>
+      <h2>AI Engineering</h2>
+      <p>Agents, RAG pipelines, and full-stack deployments — recent work and repositories.</p>
+      <div class="ai-links-row">
+        <a class="gh-link" href="https://github.com/AzTries?tab=stars" target="_blank" rel="noopener">
+          ★ Starred repositories on GitHub
+        </a>
+        <a class="gh-link" href="https://www.linkedin.com/in/snehaguchait2025grad/" target="_blank" rel="noopener">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <p class="section-label">RECENT PROJECTS</p>
+
+    <div class="proj">
+      <p class="proj-title">Synapse — AI-first CRM Agent</p>
+      <p class="proj-desc">A CRM for pharma field reps built around a 9-tool LangGraph agent — reps describe a meeting in plain language and the agent extracts structured data, flags adverse events, tracks competitor mentions, and drafts follow-ups.</p>
+      <div class="proj-links">
+        <a href="https://github.com/AzTries/AzTries-Synapse_hcp_crm_logger" target="_blank" rel="noopener">Repository</a>
+        <a class="live" href="https://az-tries-synapse-hcp-crm-logger.vercel.app/" target="_blank" rel="noopener">Live site</a>
+      </div>
+    </div>
+
+    <div class="proj">
+      <p class="proj-title">TaskFlow — Task Board App</p>
+      <p class="proj-desc">A lightweight, full-stack task board in the spirit of Trello — columns, drag-free task movement, priority filtering, and search, backed by a real database.</p>
+      <div class="proj-links">
+        <a href="https://github.com/AzTries/taskboard_fullstack" target="_blank" rel="noopener">Repository</a>
+        <a class="live" href="https://taskboard-fullstack.vercel.app/" target="_blank" rel="noopener">Live site</a>
+      </div>
+    </div>
+
+    <div class="proj">
+      <p class="proj-title">Utility Agent</p>
+      <p class="proj-desc">A tool-calling agent with weather, currency conversion, timezone lookup, and unit conversion built in.</p>
+      <div class="proj-links">
+        <a href="https://github.com/AzTries/utility-agent" target="_blank" rel="noopener">Repository</a>
+        <a class="live" href="https://aztries.github.io/utility-agent/" target="_blank" rel="noopener">Live site</a>
+      </div>
+    </div>
+
+    <div class="proj">
+      <p class="proj-title">LeadCook — B2B Lead Gen Agent</p>
+      <p class="proj-desc">An AI-powered agent for B2B lead generation, originally built as an interview assignment and rebuilt into a standalone portfolio piece.</p>
+      <div class="proj-links">
+        <a href="https://github.com/AzTries/leadcook" target="_blank" rel="noopener">Repository</a>
+        <a class="live" href="https://aztries.github.io/leadcook/" target="_blank" rel="noopener">Live site</a>
+      </div>
+    </div>
+
+    <div class="proj">
+      <p class="proj-title">Insights — AI Report Generator</p>
+      <p class="proj-desc">An AI education tool that generates student reports, generalized from a job-application project into a deployable product.</p>
+      <div class="proj-links">
+        <a href="https://github.com/AzTries/Insights--Student-Report-Worksheet-Generator" target="_blank" rel="noopener">Repository</a>
+        <a class="live" href="https://aztries.github.io/Insights--Student-Report-Worksheet-Generator/" target="_blank" rel="noopener">Live site</a>
+      </div>
+    </div>
+
+    <p class="foot-note">
+      <a class="gh-link" href="https://github.com/AzTries" target="_blank" rel="noopener">↗ github.com/AzTries</a>
+    </p>
+  </div>
+</div>
+
+<script>
+  function showView(id){
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo(0,0);
+  }
+</script>
+
+</body>
+</html>
