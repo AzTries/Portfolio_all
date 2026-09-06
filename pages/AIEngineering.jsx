@@ -1,23 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/AIEngineering.css';
 
 export default function AIEngineering() {
   const navigate = useNavigate();
   const [embeddedProject, setEmbeddedProject] = useState(null);
-
-  // Wake up Render backends on page load
-  useEffect(() => {
-    const backendUrls = [
-      'https://taskflow-backend-99jh.onrender.com',
-      'https://synapse-backend-yh6d.onrender.com/',
-    ];
-
-    backendUrls.forEach(url => {
-      fetch(url, { method: 'GET', mode: 'no-cors' })
-        .catch(() => {}); // Silent fail — we just want to ping
-    });
-  }, []);
 
   const projects = [
     {
