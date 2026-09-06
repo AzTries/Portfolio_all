@@ -85,13 +85,21 @@ export default function AIEngineering() {
       <p className="section-label">RECENT PROJECTS</p>
 
       {projects.map((proj, idx) => (
-        <div key={idx} className="proj">
+        <div 
+          key={idx} 
+          className="proj"
+          onClick={() => window.open(proj.repoUrl, '_blank')}
+          style={{ cursor: 'pointer' }}
+        >
           <p className="proj-title">{proj.title}</p>
           <p className="proj-desc">{proj.desc}</p>
           <div className="proj-links">
             <button 
               className="proj-btn try-it-out"
-              onClick={() => setEmbeddedProject(proj)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setEmbeddedProject(proj);
+              }}
             >
               Try it out
             </button>
@@ -100,6 +108,7 @@ export default function AIEngineering() {
               target="_blank"
               rel="noopener"
               className="proj-btn repo"
+              onClick={(e) => e.stopPropagation()}
             >
               Repository
             </a>
