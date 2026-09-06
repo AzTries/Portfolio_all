@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Index.css';
 
-export default function Index({ onNavigate }) {
+export default function Index() {
+  const navigate = useNavigate();
+
   const entries = [
     {
       num: 'I',
@@ -14,19 +17,19 @@ export default function Index({ onNavigate }) {
       num: 'II',
       title: 'Storyboarding',
       subtitle: 'Sequential art for 2D animation',
-      action: () => onNavigate('storyboard'),
+      action: () => navigate('/storyboarding'),
     },
     {
       num: 'III',
       title: 'Narrative Design',
       subtitle: 'Character dynamics, world systems & story one-pagers',
-      action: () => onNavigate('narrative'),
+      action: () => navigate('/narrative'),
     },
     {
       num: 'IV',
       title: 'AI Engineering',
       subtitle: 'Agents, RAG pipelines & deployed tools',
-      action: () => onNavigate('ai'),
+      action: () => navigate('/ai-engineering'),
     },
   ];
 

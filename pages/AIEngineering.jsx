@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/AIEngineering.css';
 
-export default function AIEngineering({ onNavigate }) {
+export default function AIEngineering() {
+  const navigate = useNavigate();
   const [embeddedProject, setEmbeddedProject] = useState(null);
 
   // Wake up Render backends on page load
@@ -72,7 +74,7 @@ export default function AIEngineering({ onNavigate }) {
 
   return (
     <div className="frame">
-      <button className="back" onClick={() => onNavigate('index')}>
+      <button className="back" onClick={() => navigate('/')}>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M15 18l-6-6 6-6" />
         </svg>
