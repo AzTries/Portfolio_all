@@ -36,9 +36,11 @@ a {
 }
 
 .frame {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 9vh 28px 10vh;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: clamp(6vh, 5vw, 10vh) clamp(16px, 8vw, 60px);
+  min-height: 100vh;
 }
 
 .mark {
