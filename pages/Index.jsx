@@ -21,12 +21,18 @@ export default function Index() {
     },
     {
       num: 'III',
+      title: 'Animation',
+      subtitle: 'Motion design & animated sequences',
+      action: () => navigate('/animation'),
+    },
+    {
+      num: 'IV',
       title: 'Narrative Design',
       subtitle: 'Character dynamics, world systems & story one-pagers',
       action: () => navigate('/narrative'),
     },
     {
-      num: 'IV',
+      num: 'V',
       title: 'AI Engineering',
       subtitle: 'Agents, RAG pipelines & deployed tools',
       action: () => navigate('/ai-engineering'),

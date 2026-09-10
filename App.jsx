@@ -5,6 +5,7 @@ import './Portfolio.css';
 
 import Index from './pages/Index';
 import Storyboard from './pages/Storyboard';
+import Animation from './pages/Animation';
 import Narrative from './pages/Narrative';
 import AIEngineering from './pages/AIEngineering';
 
@@ -27,6 +28,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/storyboarding" element={<Storyboard />} />
+        <Route path="/animation" element={<Animation />} />
         <Route path="/narrative" element={<Narrative />} />
         <Route path="/ai-engineering" element={<AIEngineering />} />
       </Routes>
