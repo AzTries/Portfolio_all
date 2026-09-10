@@ -204,38 +204,38 @@ Pavlov (Formerly June Hitchens) — High-ranking executive in an enemy syndicate
 
 Private Adley Cross — New recruit. Sharp, principled, wrong conclusion, right instincts. Believes he's uncovering an abuse-of-power scandal. Is, technically, half right about the secret and completely wrong about the reason.`,
     },
-    {
-      id: 4,
-      title: 'The Zombie Salmon',
-      type: 'Short Story',
-      genre: ['Science Fiction', 'Dystopian', 'Literary Fiction'],
-      excerpt: 'Mira was six the first time she snuck out to find water. There was a ditch behind the factory wall, more mud than stream...',
-      fullText: `The Zombie Salmon
+//     {
+//       id: 4,
+//       title: 'The Zombie Salmon',
+//       type: 'Short Story',
+//       genre: ['Science Fiction', 'Dystopian', 'Literary Fiction'],
+//       excerpt: 'Mira was six the first time she snuck out to find water. There was a ditch behind the factory wall, more mud than stream...',
+//       fullText: `The Zombie Salmon
 
-Mira was six the first time she snuck out to find water. There was a ditch behind the factory wall, more mud than stream. She lay on her stomach and watched a beetle skate across the surface, and something in her chest loosened. She didn't have a word for it. She just knew the water didn't care what she was supposed to be for.
+// Mira was six the first time she snuck out to find water. There was a ditch behind the factory wall, more mud than stream. She lay on her stomach and watched a beetle skate across the surface, and something in her chest loosened. She didn't have a word for it. She just knew the water didn't care what she was supposed to be for.
 
-At fifteen, they took her to the insemination wing. Nobody asked what she thought about it, because nobody there had ever asked her kind's opinion on anything. She learned to check out during the procedure—go back to the ditch, the beetle, that loose feeling in her chest, and come back when it was done. Four kids passed through her over the years. She never got to hold any of them.
+// At fifteen, they took her to the insemination wing. Nobody asked what she thought about it, because nobody there had ever asked her kind's opinion on anything. She learned to check out during the procedure—go back to the ditch, the beetle, that loose feeling in her chest, and come back when it was done. Four kids passed through her over the years. She never got to hold any of them.
 
-At thirty-one, she failed her checkup. Irregular cycles, a report that used the word "depleted" like she was a battery. Within a week, she was out of the wing, a stipend, a room in the outer district, and a small vial she was injected with at the clinic on the first of every month.
+// At thirty-one, she failed her checkup. Irregular cycles, a report that used the word "depleted" like she was a battery. Within a week, she was out of the wing, a stipend, a room in the outer district, and a small vial she was injected with at the clinic on the first of every month.
 
-The outer district had a library nobody used much. Mira started going there the same way she used to go to the ditch. She kept picking up a shelf of old field guides on freshwater fish. She read them the way you'd read letters from someone you missed.
+// The outer district had a library nobody used much. Mira started going there the same way she used to go to the ditch. She kept picking up a shelf of old field guides on freshwater fish. She read them the way you'd read letters from someone you missed.
 
-That's where she found the salmon. She read the passage three times. After they breed, salmon start dying while they're still alive. Their skin comes off, their fins fray, their flesh goes soft, and they still hold their spot in the current until it finally takes them. The books had a word for it, but people just called them zombie salmon. Alive and dying at the same time. No clean line between the two.
+// That's where she found the salmon. She read the passage three times. After they breed, salmon start dying while they're still alive. Their skin comes off, their fins fray, their flesh goes soft, and they still hold their spot in the current until it finally takes them. The books had a word for it, but people just called them zombie salmon. Alive and dying at the same time. No clean line between the two.
 
-She'd figured the sickness was just age catching up with her. Tired all the time, then bruising easy, then a ringing in her ears that made rooms tilt if she stood up too fast. It was an old guy in the district who told her differently. He said it flat, like he'd stopped being surprised years ago. The vials weren't wellness. They were the opposite. Slow and measured, so the district thinned out quietly.
+// She'd figured the sickness was just age catching up with her. Tired all the time, then bruising easy, then a ringing in her ears that made rooms tilt if she stood up too fast. It was an old guy in the district who told her differently. He said it flat, like he'd stopped being surprised years ago. The vials weren't wellness. They were the opposite. Slow and measured, so the district thinned out quietly.
 
-She didn't feel angry. Anger needs you to expect better. What she felt was closer to just finally being told the truth about something she already knew in her gut.
+// She didn't feel angry. Anger needs you to expect better. What she felt was closer to just finally being told the truth about something she already knew in her gut.
 
-She found the hatchery two districts over. Nobody guarded it. The run was ending. The banks were littered with dead fish, all gone pale and ragged. One was still alive in the shallows. Its fin barely broke the surface. The flesh had gone rust-colored, and white fungus was spreading along one side where the skin had split.
+// She found the hatchery two districts over. Nobody guarded it. The run was ending. The banks were littered with dead fish, all gone pale and ragged. One was still alive in the shallows. Its fin barely broke the surface. The flesh had gone rust-colored, and white fungus was spreading along one side where the skin had split.
 
-Mira crouched at the edge of the water. She didn't touch it. She'd learned a long time ago that some things don't want to be handled but just watched.
+// Mira crouched at the edge of the water. She didn't touch it. She'd learned a long time ago that some things don't want to be handled but just watched.
 
-She stayed and watched it hold its place against a current too weak to push it anywhere anymore. She watched its gills slow down. She watched the moment where holding on and letting go stopped being different things.
+// She stayed and watched it hold its place against a current too weak to push it anywhere anymore. She watched its gills slow down. She watched the moment where holding on and letting go stopped being different things.
 
-"You did what you were built for," she said to the fish, or to herself, she couldn't really tell anymore. "And now they're letting you rest."
+// "You did what you were built for," she said to the fish, or to herself, she couldn't really tell anymore. "And now they're letting you rest."
 
-The gills stopped. Mira stayed by the water a while longer. Behind her was the clinic, and the vial waiting in it. She wasn't scared of what came next. She just hoped it would be half as easy as the water had been.`,
-    },
+// The gills stopped. Mira stayed by the water a while longer. Behind her was the clinic, and the vial waiting in it. She wasn't scared of what came next. She just hoped it would be half as easy as the water had been.`,
+//     },
   ];
 
   const allTypes = ['Short Story', 'Film Treatment', 'Sample Chapter', 'One-Pager', 'Character Profile'];
