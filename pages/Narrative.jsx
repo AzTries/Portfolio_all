@@ -54,6 +54,158 @@ The story closes on a double ending: Julian dies in a freak accident during the 
     },
     {
       id: 3,
+      title: 'Rules for Surviving General Raka',
+      type: 'Sample Chapter',
+      genre: ['Military Drama', 'Dark Comedy'],
+      excerpt: 'Kinny has the best career in the army — if he can keep his general\'s forbidden relationship with a wanted war criminal a secret from everyone, including a new recruit hell-bent on exposing it.',
+      fullText: `RULES FOR SURVIVING GENERAL RAKA
+Sample Chapter — Interactive Fiction Writing Portfolio
+
+Format: Choice-based interactive fiction, mobile format
+Genre: Military drama / dark comedy
+POV Character: Kinny (Assistant General Kinnsch Alek Von Ross)
+Playtime: ~6–8 minutes
+
+Logline: Kinny has the best career in the army — if he can keep his general's forbidden relationship with a wanted war criminal a secret from everyone, including a new recruit hell-bent on exposing it.
+
+---
+
+CHAPTER 1: THE FIRST RULE
+
+Kinny stood outside the basement door with a report in his hand and a very bad feeling in his chest.
+
+He'd learned three rules working under General Raka Sebastian. He was about to test the first one.
+
+RULE ONE: Never knock unless it's an active raid.
+
+The report was not an active raid. The report was a supply manifest that could, generously, wait until tomorrow.
+
+Kinny knocked anyway.
+
+A long pause. Then, from inside — Raka's voice, clipped and impatient.
+
+RAKA: Come in.
+
+Kinny opened the door. He would spend the rest of his career trying to un-know what he saw in the next four seconds.
+
+KINNY: (strangled) Sir—
+
+RAKA: (not remotely startled) What.
+
+Kinny stared very hard at the report in his hands. The words on it stopped meaning anything.
+
+A second voice — amused, unbothered, entirely too cheerful for the situation — called out from somewhere Kinny was not going to look directly at.
+
+VOICE: Hi!
+
+Kinny did not say hi back. Kinny had actually, for the first time in his adult life, forgotten how to speak.
+
+RAKA: Why were you knocking.
+
+KINNY: I— it's— the manifest, sir, it can—
+
+RAKA: Then it wasn't worth knocking. Think, before you decide something is worth my time. There are consequences when you decide wrong.
+
+KINNY: (already backing toward the stairs) Understood, sir.
+
+RAKA: Wait in my office. And Kinny — From now on, you don't knock on this door unless you need me right then.
+
+KINNY: Yes, sir.
+
+---
+
+He stood in the hallway for a long moment afterward, back against the wall, staring at nothing.
+
+He had just seen something that could end a general's career. Maybe worse than his career.
+
+He also had a very clear, very loud sense of exactly how badly that would end for the person who reported it.
+
+---
+
+CHOICE POINT 1:
+→ Report it: Go straight to Command with what you saw.
+→ Say nothing: Lock it away and never mention it again.
+
+---
+
+Six months later, Kinny understood the shape of it, even if he'd never been told outright.
+
+General Raka Sebastian — decorated, feared, the reason three separate divisions hadn't collapsed under enemy pressure last spring — was involved with a person named Pavlov.
+
+The Pavlov. Highest-ranking executive in a syndicate their entire division existed to dismantle. An operative with a bounty that could buy a small country.
+
+Kinny had the spare key to the basement. He had never asked for it. He was fairly sure declining it had not been an option.
+
+Today, the problem had a name, and the name was Private Adley Cross.
+
+Eager. Sharp. The kind of new recruit who still believed the manual was the whole job.
+
+Kinny found him in the mess hall, mid-sentence, three other soldiers leaning in.
+
+ADLEY: —I'm telling you, there's a locked room under the General's office. Nobody's allowed near it. You know what that sounds like?
+
+SOLDIER: A supply closet?
+
+ADLEY: (deadly serious) A cell. Think about it. Locked. Guarded. Nobody's ever seen inside. And the General won't explain it to anyone — not even senior staff. I think he's holding someone down there. Interrogating them. Maybe worse.
+
+---
+
+CHOICE POINT 2:
+→ Shut this down directly: Tell Adley he's wrong, firmly, before this spreads further.
+→ Play it cool and redirect: Steer the conversation somewhere else without confirming or denying anything.
+
+---
+
+That night, Kinny found himself outside Raka's office, waiting to deliver the one piece of information he genuinely did not want to say out loud.
+
+KINNY: Sir. There's a rumor going around. About the basement.
+
+Raka didn't look up from his desk. He looked visibly exhausted, rubbing his temples.
+
+RAKA: How bad.
+
+KINNY: Cross thinks you're holding a prisoner down there. Possibly — interrogating them.
+
+A pause. Then, dry as anything:
+
+RAKA: That's not wrong, technically. High Command called an emergency midnight briefing on supply lines, so my evening was... prematurely concluded.
+
+KINNY: (internal) Translation: High Command interrupted his private time, and now I'm paying the price.
+
+RAKA: (finally looking up, unreadable) You have the spare key, Kinny. Do you know why.
+
+KINNY: Because you trusted me with it.
+
+RAKA: Because I trusted you'd understand what that trust costs you, if it ever gets out. This isn't my problem to manage quietly. It's yours too, now.
+
+---
+
+CHOICE POINT 3:
+→ Quietly gather proof: Log dates, log sightings — build something you could use, if you ever needed leverage.
+→ Stay loyal, no games: Keep protecting the secret exactly as asked. Trust that loyalty gets repaid.
+
+---
+
+Whichever road Kinny took, the next knock at the office door brings the same problem back into the room: Private Adley Cross, standing in the hallway with something small and metal in a gloved hand.
+
+A restraint clasp. The kind that doesn't belong to any equipment locker Kinny knew of.
+
+ADLEY: (quiet, triumphant) Found this. Outside the basement door. Want to explain it, sir — or should I take it straight to Command?
+
+---
+
+CHARACTER REFERENCE:
+
+Kinny (Kinnsch Alek Von Ross) — Assistant General. Capable, sharp, allergic to unnecessary drama. His name sounds like a war criminal; his personality is closer to a very tired office manager. Wants: to keep his job, his sanity, and his general's secret, in that order of increasing difficulty.
+
+General Raka Sebastian — Field-commanding general, respected and feared in equal measure. Controlled in public to the point of unsettling. Privately involved with a wanted enemy executive and does not consider this a contradiction worth explaining to anyone.
+
+Pavlov (Formerly June Hitchens) — High-ranking executive in an enemy syndicate. Publicly: one of the most wanted operatives alive. Privately: hopelessly, shamelessly attached to a general who is technically supposed to be hunting them.
+
+Private Adley Cross — New recruit. Sharp, principled, wrong conclusion, right instincts. Believes he's uncovering an abuse-of-power scandal. Is, technically, half right about the secret and completely wrong about the reason.`,
+    },
+    {
+      id: 4,
       title: 'The Zombie Salmon',
       type: 'Short Story',
       genre: ['Science Fiction', 'Dystopian', 'Literary Fiction'],
@@ -86,8 +238,8 @@ The gills stopped. Mira stayed by the water a while longer. Behind her was the c
     },
   ];
 
-  const allTypes = ['Short Story', 'Film Treatment', 'One-Pager', 'Character Profile'];
-  const allGenres = ['Literary Fiction', 'Coming-of-Age', 'Psychological Horror', 'Thriller', 'Science Fiction', 'Dystopian'];
+  const allTypes = ['Short Story', 'Film Treatment', 'Sample Chapter', 'One-Pager', 'Character Profile'];
+  const allGenres = ['Literary Fiction', 'Coming-of-Age', 'Psychological Horror', 'Thriller', 'Science Fiction', 'Dystopian', 'Military Drama', 'Dark Comedy'];
 
   const toggleFilter = (category, value) => {
     setSelectedFilters(prev => ({
