@@ -40,31 +40,41 @@ export default function Index() {
   ];
 
   return (
-    <div className="frame">
-      <div className="titling">
-        <h1>Sneha Guchait</h1>
-        <p className="alias-line">creative alias: Azz</p>
-        <p>Illustration, story, and systems — a working index of things made.</p>
+    <>
+      {/* Animated background elements */}
+      <div className="bg-decoration">
+        <div className="float-blob blob-1"></div>
+        <div className="float-blob blob-2"></div>
+        <div className="float-blob blob-3"></div>
+        <div className="grid-lines"></div>
       </div>
 
-      <div className="index-list">
-        {entries.map((entry) => (
-          <div
-            key={entry.num}
-            className="entry"
-            onClick={entry.action}
-          >
-            <span className="entry-num">{entry.num}</span>
-            <div className="entry-body">
-              <p className="entry-title">{entry.title}</p>
-              <p className="entry-sub">{entry.subtitle}</p>
+      <div className="frame">
+        <div className="titling">
+          <h1>Sneha Guchait</h1>
+          <p className="alias-line">creative alias: Azz</p>
+          <p>Illustration, story, and systems — a working index of things made.</p>
+        </div>
+
+        <div className="index-list">
+          {entries.map((entry) => (
+            <div
+              key={entry.num}
+              className="entry"
+              onClick={entry.action}
+            >
+              <span className="entry-num">{entry.num}</span>
+              <div className="entry-body">
+                <p className="entry-title">{entry.title}</p>
+                <p className="entry-sub">{entry.subtitle}</p>
+              </div>
+              <span className="entry-arrow">{entry.external ? '↗' : '→'}</span>
             </div>
-            <span className="entry-arrow">{entry.external ? '↗' : '→'}</span>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <p className="foot-note">Delhi — built and maintained by hand.</p>
-    </div>
+        <p className="foot-note">Delhi — built and maintained by hand.</p>
+      </div>
+    </>
   );
 }
