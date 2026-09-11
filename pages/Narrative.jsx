@@ -204,38 +204,30 @@ Pavlov (Formerly June Hitchens) — High-ranking executive in an enemy syndicate
 
 Private Adley Cross — New recruit. Sharp, principled, wrong conclusion, right instincts. Believes he's uncovering an abuse-of-power scandal. Is, technically, half right about the secret and completely wrong about the reason.`,
     },
-//     {
-//       id: 4,
-//       title: 'The Zombie Salmon',
-//       type: 'Short Story',
-//       genre: ['Science Fiction', 'Dystopian', 'Literary Fiction'],
-//       excerpt: 'Mira was six the first time she snuck out to find water. There was a ditch behind the factory wall, more mud than stream...',
-//       fullText: `The Zombie Salmon
+     {
+       id: 4,
+       title: 'The Zombie Salmon',
+       type: 'Short Story',
+       genre: ['Science Fiction', 'Dystopian', 'Literary Fiction'],
+       excerpt: 'She was six when she first snuck out to find flowing water blooming with life. There was a sparkling river behind her quarters wall....',
+       fullText: `The Zombie Salmon
 
-// Mira was six the first time she snuck out to find water. There was a ditch behind the factory wall, more mud than stream. She lay on her stomach and watched a beetle skate across the surface, and something in her chest loosened. She didn't have a word for it. She just knew the water didn't care what she was supposed to be for.
+// She was six when she first snuck out to find flowing water blooming with life. There was a sparkling river behind her quarters' wall. She had always climbed her bed to look out and listen to the water flowing, to the fish making bubbles in the water, little animals around the water doing what little animals did when they were not trapped inside the four walls of an institution.
 
-// At fifteen, they took her to the insemination wing. Nobody asked what she thought about it, because nobody there had ever asked her kind's opinion on anything. She learned to check out during the procedure—go back to the ditch, the beetle, that loose feeling in her chest, and come back when it was done. Four kids passed through her over the years. She never got to hold any of them.
+// She carefully walked on the muddy ground beside the riverbank. A shiny silver fish caught her eye. She crouched down. She looked with wide eyes. “A salmon…” That’s what she heard those are called. The fish looked so happy, swimming with its friends. The girl felt her chest become lighter and her shoulders loosen. The never-ending mechanical hum from the machinery in the institution behind her seemed to fade into the background. She didn't have a word for what she felt. She just knew the water made her forget about the scary stories she heard from other kids her age, about the procedure.
 
-// At thirty-one, she failed her checkup. Irregular cycles, a report that used the word "depleted" like she was a battery. Within a week, she was out of the wing, a stipend, a room in the outer district, and a small vial she was injected with at the clinic on the first of every month.
+// At fifteen, they congratulated her with a candy. “You can contribute to the nation now”, was what they said. Easy for her, there was nothing to form an opinion on. During the procedure that followed, her mind wandered back to the river, the salmon, the loose feeling in her chest. The years that followed were a blur. By the time her mind came back to where it was supposed to belong, she was already 32 years old. Handed a report that used the word "depleted". Within a week, she was out of the sterile room, given a room in the lower quarters, where she grew up all these blurry years ago.
 
-// The outer district had a library nobody used much. Mira started going there the same way she used to go to the ditch. She kept picking up a shelf of old field guides on freshwater fish. She read them the way you'd read letters from someone you missed.
+// She was told to visit the clinic on the first of every month. “For continued wellness,” they said. As she walked out the sterile room for the last time, she heard some voices from another room. “Vessel Intake Room” was what the sign on the door said. The door was slightly open. “This is for you, little girl-” the people in white handed a little girl a candy. That little girl wouldn’t be too far from how old this girl had been when she was brought here. That candy also had the same sterile grey wrapper. The ‘depleted’ woman didn’t linger much.
 
-// That's where she found the salmon. She read the passage three times. After they breed, salmon start dying while they're still alive. Their skin comes off, their fins fray, their flesh goes soft, and they still hold their spot in the current until it finally takes them. The books had a word for it, but people just called them zombie salmon. Alive and dying at the same time. No clean line between the two.
+// Few days later, she found herself back at the bank of the river, with the water currents, the winds, among the fishes and beetles. She crouched down like she did when she was little.
 
-// She'd figured the sickness was just age catching up with her. Tired all the time, then bruising easy, then a ringing in her ears that made rooms tilt if she stood up too fast. It was an old guy in the district who told her differently. He said it flat, like he'd stopped being surprised years ago. The vials weren't wellness. They were the opposite. Slow and measured, so the district thinned out quietly.
+// She closed her eyes and felt the noises fade away. Since she came back to her quarters, she had been hearing stories again, from people her age living beside her, the men and women who had also been tagged as depleted. How everyone who came back here left within six to eight months, not with a candy this time, but in white sheets, unresponsive, carried by 2 to 4 people, never to be seen again.
 
-// She didn't feel angry. Anger needs you to expect better. What she felt was closer to just finally being told the truth about something she already knew in her gut.
+// She opens her eyes, for she is unable to fade out the stories this time. She looks at the fishes and murmurs, “You are not silver anymore…” The bright shiny silver salmon that once brought her joy doesn't look the same anymore. They are all dull and dark and brown, like they are decaying in real time. When she was with the people in white lab coats, out of curiosity, she had asked about the salmon. They had told her how the salmon starts losing its life after it gives birth to the next generation. How they lose their energy, their color, just waiting for nature to claim them back. She had thought they were telling her made-up stories like about everything else.
 
-// She found the hatchery two districts over. Nobody guarded it. The run was ending. The banks were littered with dead fish, all gone pale and ragged. One was still alive in the shallows. Its fin barely broke the surface. The flesh had gone rust-colored, and white fungus was spreading along one side where the skin had split.
-
-// Mira crouched at the edge of the water. She didn't touch it. She'd learned a long time ago that some things don't want to be handled but just watched.
-
-// She stayed and watched it hold its place against a current too weak to push it anywhere anymore. She watched its gills slow down. She watched the moment where holding on and letting go stopped being different things.
-
-// "You did what you were built for," she said to the fish, or to herself, she couldn't really tell anymore. "And now they're letting you rest."
-
-// The gills stopped. Mira stayed by the water a while longer. Behind her was the clinic, and the vial waiting in it. She wasn't scared of what came next. She just hoped it would be half as easy as the water had been.`,
-//     },
+// She looks at the salmon, decaying while still breathing, and once again, like her happy years, her chest feels lighter, and her shoulders loosen.
+     },
   ];
 
   const allTypes = ['Short Story', 'Film Treatment', 'Sample Chapter', 'One-Pager', 'Character Profile'];
